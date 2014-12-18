@@ -1,13 +1,22 @@
-function countBs(string,ch){
+'use strict';
 
-  var c=0;
-    for(var i=0;i<string.length;i++)
-      {
-        if(string.charAt(i)==ch)
-          c++;
-      }
+// worker
+function countChar(text, ch) {
+    var count = 0;
+    for (var i = 0; i < text.length; i++) {
+        if (text.charAt(i) === ch) {
+          count++;
+        }
+    }
+    return count;
+}
 
-      console.log(c);
-};
+// data
+var text = 'Hello how are you?';
+var what = 'e';
 
-countBs("Bees","e");
+// call worker
+var count = countChar(text, what);
+
+// print
+console.log('Found "%s" %d times in "%s"', what, count, text);
