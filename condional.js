@@ -1,26 +1,22 @@
- var x=6;
+ var x = 6;
 
- if(x>3)
+ if (x > 3)
 
-   console.log("True");
+   console.log ("True");
 
  else
-    console.log("False");
+    console.log ("False");
 
-while(x<=12)
-  {
-   console.log(x);
+while (x <= 12) {
+   console.log (x);
    x++;
   }
 
-var result=1;
-var c=0;
+var result = 1;
+var c = 0;
 
-while(c<10)
-  {
-    result=result*2;
+while (c < 10) {
+    result = result * 2;
     c++;
   }
-  console.log(result);
-
-  
+  console.log (result);
