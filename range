@@ -1,22 +1,21 @@
-function range(start,end,step){
+'use strict';
 
+function range( start, end, step) {
 
-   if(step==null)
-     step=1;
-     var array=[];
+   if (step == null)
+     step = 1;
+     var array = [];
 
-  if(step>0)
-   {
-     for(var i=start;i<=end;i+=step)
-     {
-         array.push(i);
+  if (step > 0) {
+     for (var i = start; i <= end; i += step) {
+         array.push (i);
      }
    }
 
-  else{
-        for(var i=start;i>=end;i+=step)
+  else {
+        for (var i = start; i >= end; i += step)
         {
-             array.push(i);
+             array.push (i);
         }
       }
 
@@ -24,13 +23,13 @@ function range(start,end,step){
 };
 
 
-function sum(array){
-   var sum=0;
-   for(var i=0;i<array.length;i++)
-      sum+=array[i];
-  console.log(sum);
+function sum (array) {
+   var sum = 0;
+   for (var i = 0; i < array.length; i++)
+      sum += array[i];
+  console.log (sum);
 
 };
 
-console.log(range(0,2));
-sum(range(1,10));
+console.log (range (0,2));
+sum (range (1,10));

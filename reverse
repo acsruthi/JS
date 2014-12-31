@@ -1,12 +1,12 @@
-function reverseArray(array){
+'use strict';
+function reverseArray (array) {
 
-   var newArray=[];
+   var newArray = [];
 
-   for(var i=array.length;i>0;i--)
-      {
-          newArray.push(i);
+   for (var i = array.length; i > 0; i--) {
+          newArray.push (i);
       }
       return newArray;
 };
 
-console.log(reverseArray([1,2,3,4]));
+console.log (reverseArray ([1,2,3,4]));

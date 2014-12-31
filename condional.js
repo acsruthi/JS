@@ -1,3 +1,4 @@
+'use strict';
  var x = 6;
 
  if (x > 3)
