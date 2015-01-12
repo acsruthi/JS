@@ -29,5 +29,15 @@ function sum(array) {
 }
 
 
-filter([1,2,3,4],even);
-sum([1,2,3]);
+//filter([1,2,3,4],even);
+//sum([1,2,3]);
+
+
+var ancestry = [
+  { "name" : "Sam", "age" : 25 },
+  { "name" : "Tom", "age" : 40 }
+]
+
+ console.log (filter (ancestry, function (person) {
+    return person.age < 50;
+ }));
